@@ -223,6 +223,7 @@ class PatternScanner:
                       for code in codes}
             for future in tqdm(as_completed(futures), total=len(codes), desc="下载进度"):
                 pass
+            
 
     def process_single_stock(self, file_name):
         """整合MarketPatternAnalyzer的检测逻辑"""
